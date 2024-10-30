@@ -1,6 +1,6 @@
 import React from 'react';
-import { ArrowRight, Salad, Dumbbell, Brain, Calculator, Timer } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { ArrowRight, Salad, Dumbbell, Brain, Calculator, Timer, Wind } from 'lucide-react';
 
 const Home = () => {
   return (
@@ -93,6 +93,13 @@ const Home = () => {
               <p className="text-gray-600 mb-4">
                 Find resources and techniques for maintaining mental health and emotional balance.
               </p>
+              <div className="bg-purple-50 p-3 rounded-lg mb-4 w-full">
+                <div className="flex items-center justify-center mb-2">
+                  <Wind className="h-5 w-5 text-purple-600 mr-2" />
+                  <span className="font-medium text-purple-600">Featured: Breathing Exercises</span>
+                </div>
+                <p className="text-sm text-gray-600">Interactive breathing patterns with visual guides and customizable durations</p>
+              </div>
               <Link
                 to="/mental-health"
                 className="text-purple-500 hover:text-purple-600 font-medium inline-flex items-center"
