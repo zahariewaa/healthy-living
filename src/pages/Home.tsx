@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Salad, Dumbbell, Brain } from 'lucide-react';
+import { ArrowRight, Salad, Dumbbell, Brain, Calculator, Timer } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
@@ -47,6 +47,13 @@ const Home = () => {
               <p className="text-gray-600 mb-4">
                 Learn about balanced diets, meal planning, and healthy recipes that nourish your body.
               </p>
+              <div className="bg-green-50 p-3 rounded-lg mb-4 w-full">
+                <div className="flex items-center justify-center mb-2">
+                  <Calculator className="h-5 w-5 text-green-600 mr-2" />
+                  <span className="font-medium text-green-600">Featured: BMI Calculator</span>
+                </div>
+                <p className="text-sm text-gray-600">Calculate your Body Mass Index and get personalized recommendations</p>
+              </div>
               <Link
                 to="/nutrition"
                 className="text-green-500 hover:text-green-600 font-medium inline-flex items-center"
@@ -63,6 +70,13 @@ const Home = () => {
               <p className="text-gray-600 mb-4">
                 Discover workouts, fitness tips, and exercise routines for all levels.
               </p>
+              <div className="bg-blue-50 p-3 rounded-lg mb-4 w-full">
+                <div className="flex items-center justify-center mb-2">
+                  <Timer className="h-5 w-5 text-blue-600 mr-2" />
+                  <span className="font-medium text-blue-600">Featured: Workout Timer</span>
+                </div>
+                <p className="text-sm text-gray-600">Customizable intervals with rest periods and preset workouts</p>
+              </div>
               <Link
                 to="/exercise"
                 className="text-blue-500 hover:text-blue-600 font-medium inline-flex items-center"
